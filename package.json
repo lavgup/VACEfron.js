@@ -1,0 +1,20 @@
+{
+  "name": "vacefron.js",
+  "version": "1.0.0",
+  "description": "A wrapper for the VACEfron API in JavaScript.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "wrapper",
+    "api-wrapper",
+    "vacefron"
+  ],
+  "author": "Sidemen19",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
