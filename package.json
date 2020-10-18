@@ -1,5 +1,5 @@
 {
-  "name": "vacefron.js",
+  "name": "vacefron",
   "version": "1.0.0",
   "description": "A wrapper for the VACEfron API in JavaScript.",
   "main": "src/index.js",
