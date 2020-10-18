@@ -12,6 +12,14 @@
     "api-wrapper",
     "vacefron"
   ],
+  "homepage": "https://github.com/Sidemen19/VACEfron.js",
+  "repository": {
+    "url": "https://github.com/Sidemen19/VACEfron.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Sidemen19/VACEfron.js/issues",
+    "email": "lavyag01@gmail.com"
+  },
   "author": "Sidemen19",
   "license": "MIT",
   "dependencies": {

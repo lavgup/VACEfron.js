@@ -29,6 +29,7 @@ class VACEFronJS {
 
         const params = new URLSearchParams(parameters);
         const response = await fetch(`${this.base}/${endpoint}?${params}`);
+
         // noinspection JSUnresolvedFunction
         return response.buffer();
     }
