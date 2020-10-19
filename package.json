@@ -1,6 +1,6 @@
 {
   "name": "vacefron",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A wrapper for the VACEfron API in JavaScript.",
   "main": "src/index.js",
   "scripts": {
