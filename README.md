@@ -16,8 +16,11 @@ With yarn:
 yarn add vacefron
 ```
 
+## Documentation
+Check [docs.md](docs.md);
+
 ## Example usages
-All functions return `Promise<Buffer>`.
+All methods return `Promise<Buffer>`.
 ### Basic
 ```js
 const vacefron = require('vacefron');
@@ -41,7 +44,9 @@ client.on(async message => {
     
         return message.channel.send(attachment);
     }   
-})
+});
+
+client.login('token');
 ```
 
 ## Other wrappers

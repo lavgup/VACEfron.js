@@ -47,8 +47,7 @@ class VACEFronJS {
     }
 
     ejected(name, wasImposter, color) {
-        // noinspection EqualityComparisonWithCoercionJS
-        if (wasImposter != true || wasImposter != false) {
+        if (typeof wasImposter !== 'boolean') {
             wasImposter = Math.random() >= 0.5;
         }
 
@@ -93,7 +92,7 @@ class VACEFronJS {
     rankCard(
         username,
         avatarURL,
-        customBackgroundURL = '',
+        customBackgroundURL,
         level,
         rank,
         currentXP,
