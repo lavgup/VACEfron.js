@@ -1,9 +1,23 @@
 Documentation of the wrapper's methods.
 
-**NOTES**: 
-
 Properties in *italics* are not required.
 All methods return `Promise<Buffer>`.
+
+- [Methods](#methods)
+  * [carReverse()](#carreverse)
+  * [distractedBoyfriend()](#distractedboyfriend)
+  * [ejected()](#ejected)
+  * [emergencyMeeting()](#emergencymeeting)
+  * [firstTime()](#firsttime)
+  * [grave()](#grave)
+  * [iAmSpeed()](#iamspeed)
+  * [iCanMilkYou()](#icanmilkyou)
+  * [heaven()](#heaven)
+  * [rankCard()](#rankcard)
+  * [stonks()](#stonks)
+  * [tableFlip()](#tableflip)
+  * [water()](#water)
+  * [wide()](#wide)
 
 ## Methods
 ### carReverse()
