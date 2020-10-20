@@ -1,2 +1,11 @@
-node_modules/
-.idea/
+# deps
+node_modules
+
+# ide settings
+.idea
+
+# compiled
+dist
+
+# dep tree
+pnpm-lock.yaml

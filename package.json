@@ -1,8 +1,9 @@
 {
   "name": "vacefron",
-  "version": "1.1.0",
-  "description": "A wrapper for the VACEfron API in JavaScript.",
-  "main": "src/index.js",
+  "version": "2.0.0",
+  "description": "A wrapper for the VACEfron API in TypeScript.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +11,8 @@
     "api",
     "wrapper",
     "api-wrapper",
-    "vacefron"
+    "vacefron",
+    "typescript"
   ],
   "homepage": "https://github.com/Sidemen19/VACEfron.js",
   "repository": {
@@ -23,6 +25,8 @@
   "author": "Sidemen19",
   "license": "MIT",
   "dependencies": {
+    "@types/node": "^14.11.10",
+    "@types/node-fetch": "^2.5.7",
     "node-fetch": "^2.6.1"
   }
 }
