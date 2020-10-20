@@ -52,5 +52,8 @@ client.login('token');
 * [C#](https://github.com/VACEfron/VACEfron.NET)
 * [Python](https://github.com/Soheab/vacefron.py/)
 
+## Support
+[Discord server](https://discord.gg/xJ2HRxZ)
+
 ## Contributing
 Anyone can contribute! Please just make them merge-worthy changes.
