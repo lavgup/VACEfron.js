@@ -1,7 +1,6 @@
 Documentation of the wrapper's methods.
 
-Properties in *italics* are not required.
-All methods return `Promise<Buffer>`.
+Properties in *italics* are not required. All methods return `Promise<Buffer>`.
 
 - [Methods](#methods)
   * [carReverse()](#carreverse)
@@ -39,7 +38,7 @@ girlfriendAvatarURL `string` | Avatar URL for the girlfriend's face.
 
 name `string` | Name of the player.
 
-*wasImposter* `boolean` | Whether the play is the imposter.
+*wasImposter* `boolean` | Whether the player is the imposter.
 
 *color* `black|blue|brown|cyan|darkgreen|lime|orange|pink|purple|red|white|yellow` | The color of the player.
 
@@ -90,13 +89,13 @@ rank `number` | The ranking of the user.
 
 currentXP `number` | The amount of XP the user currently has.
 
-nextLevelXP `number` | How much XP is required to reach the next level.
+nextLevelXP `number` | XP required to reach the next level.
 
-previousLevelXP `number` | How much XP was required to reach the user's current level.
+previousLevelXP `number` | XP required to reach the user's current level.
 
 xpColor `string` | The color (hex) of the XP bar.
 
-isBoosting `boolean` | Whether a boost badge will be displayed next to the user's name if they are XP boosting.
+isBoosting `boolean` | Whether a boost badge will be displayed next to the user's name.
 
 ### stonks()
 **Parameters**:

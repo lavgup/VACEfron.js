@@ -1,4 +1,4 @@
-A wrapper for the [VACEfron API](https://vacefron.nl/api) in JavaScript.
+A wrapper for the [VACEfron API](https://vacefron.nl/api) in TypeScript.
 
 ## Installation
 With pnpm (recommended):
@@ -17,10 +17,9 @@ yarn add vacefron
 ```
 
 ## Documentation
-Check [docs.md](docs.md);
+Check [docs.md](docs.md).
 
 ## Example usages
-All methods return `Promise<Buffer>`.
 ### Basic
 ```js
 const vacefron = require('vacefron');
@@ -55,5 +54,3 @@ client.login('token');
 
 ## Contributing
 Anyone can contribute! Please just make them merge-worthy changes.
-
-I may do a TypeScript rewrite of this wrapper when I have more experience with it.
