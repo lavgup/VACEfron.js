@@ -83,11 +83,11 @@ class VACEFronJS {
     }
 
     iAmSpeed(avatarURL: string): Promise<Buffer> {
-        return this.api('icanmilkyou', { user: avatarURL });
+        return this.api('iamspeed', { user: avatarURL });
     }
 
     iCanMilkYou(faceAvatarURL: string, cowAvatarURL: string): Promise<Buffer> {
-        return this.api('iamspeed', {
+        return this.api('icanmilkyou', {
             user1: faceAvatarURL,
             user2: cowAvatarURL
         });
