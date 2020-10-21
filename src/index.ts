@@ -46,7 +46,7 @@ class VACEFronJS {
         return this.api('carreverse', { text: text });
     }
 
-    distractedBoyfriend(boyfriendAvatarURL: string, womanAvatarURL: string, girlfriendAvatarURL: string): Promise<Buffer> {
+    public distractedBoyfriend(boyfriendAvatarURL: string, womanAvatarURL: string, girlfriendAvatarURL: string): Promise<Buffer> {
         return this.api('distractedbf', {
             boyfriend: boyfriendAvatarURL,
             woman: womanAvatarURL,
@@ -54,7 +54,7 @@ class VACEFronJS {
         });
     }
 
-    ejected(name: string, wasImposter?: boolean, color?: string): Promise<Buffer> {
+    public ejected(name: string, wasImposter?: boolean, color?: string): Promise<Buffer> {
         if (!wasImposter) {
             wasImposter = Math.random() >= 0.5;
         }
@@ -70,34 +70,34 @@ class VACEFronJS {
         });
     }
 
-    emergencyMeeting(text: string): Promise<Buffer> {
+    public emergencyMeeting(text: string): Promise<Buffer> {
         return this.api('emergencymeeting', { text: text });
     }
 
-    firstTime(avatarURL: string): Promise<Buffer> {
+    public firstTime(avatarURL: string): Promise<Buffer> {
         return this.api('firsttime', { user: avatarURL });
     }
 
-    grave(avatarURL: string): Promise<Buffer> {
+    public grave(avatarURL: string): Promise<Buffer> {
         return this.api('grave', { user: avatarURL });
     }
 
-    iAmSpeed(avatarURL: string): Promise<Buffer> {
+    public iAmSpeed(avatarURL: string): Promise<Buffer> {
         return this.api('iamspeed', { user: avatarURL });
     }
 
-    iCanMilkYou(faceAvatarURL: string, cowAvatarURL: string): Promise<Buffer> {
+    public iCanMilkYou(faceAvatarURL: string, cowAvatarURL: string): Promise<Buffer> {
         return this.api('icanmilkyou', {
             user1: faceAvatarURL,
             user2: cowAvatarURL
         });
     }
 
-    heaven(avatarURL: string): Promise<Buffer> {
+    public heaven(avatarURL: string): Promise<Buffer> {
         return this.api('heaven', { user: avatarURL });
     }
 
-    rankCard(
+    public rankCard(
         username: string,
         avatarURL: string,
         customBackgroundURL: string,
@@ -123,19 +123,19 @@ class VACEFronJS {
         });
     }
 
-    stonks(avatarURL: string): Promise<Buffer> {
+    public stonks(avatarURL: string): Promise<Buffer> {
         return this.api('stonks', { user: avatarURL });
     }
 
-    tableFlip(avatarURL: string): Promise<Buffer> {
+    public tableFlip(avatarURL: string): Promise<Buffer> {
         return this.api('tableflip', { user: avatarURL });
     }
 
-    water(text: string): Promise<Buffer> {
+    public water(text: string): Promise<Buffer> {
         return this.api('water', { text: text });
     }
 
-    wide(imageURL: string): Promise<Buffer> {
+    public wide(imageURL: string): Promise<Buffer> {
         return this.api('wide', { image: imageURL });
     }
 }
