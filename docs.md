@@ -102,6 +102,8 @@ isBoosting `boolean` | Whether a boost badge will be displayed next to the user'
 
 avatarURL `string` | Avatar URL for the Stonks meme.
 
+*notStonks* `boolean` | Whether to generate a *not stonks* image.
+
 ### tableFlip()
 **Parameters**:
 

@@ -54,11 +54,7 @@ class VACEFronJS {
         });
     }
 
-    public ejected(name: string, wasImposter?: boolean, color?: string): Promise<Buffer> {
-        if (!wasImposter) {
-            wasImposter = Math.random() >= 0.5;
-        }
-
+    public ejected(name: string, wasImposter = Math.random() >= 0.5, color?: string): Promise<Buffer> {
         if (!color || !this.crewmateColors.includes(color.toLowerCase())) {
             color = this.crewmateColors[Math.floor(Math.random() * this.crewmateColors.length)];
         }
@@ -123,8 +119,8 @@ class VACEFronJS {
         });
     }
 
-    public stonks(avatarURL: string): Promise<Buffer> {
-        return this.api('stonks', { user: avatarURL });
+    public stonks(avatarURL: string, notStonks = false): Promise<Buffer> {
+        return this.api('stonks', { user: avatarURL, notstonks: notStonks });
     }
 
     public tableFlip(avatarURL: string): Promise<Buffer> {
