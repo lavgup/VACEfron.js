@@ -36,7 +36,7 @@ const client = new Client();
 
 const vacefron = require('vacefron');
 
-client.on(async message => {
+client.on("message", async message => {
     if (message.content === '!iamspeed') {
         const buffer = await vacefron.iAmSpeed(message.author.displayAvatarURL());
         const attachment = new MessageAttachment(buffer, 'iamspeed.png');
