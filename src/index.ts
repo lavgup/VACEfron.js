@@ -42,6 +42,15 @@ class VACEFronJS {
         return response.buffer();
     }
 
+    public batmanSlap(text1: string, text2: string, batman?: string, robin?: string): Promise<Buffer> {
+        return this.api('batmanslap', {
+            text1,
+            text2,
+            batman,
+            robin
+        });
+    }
+
     public carReverse(text: string): Promise<Buffer> {
         return this.api('carreverse', { text: text });
     }
@@ -133,6 +142,10 @@ class VACEFronJS {
 
     public wide(imageURL: string): Promise<Buffer> {
         return this.api('wide', { image: imageURL });
+    }
+
+    public wolverine(avatarURL: string): Promise<Buffer> {
+        return this.api('wolverine', { user: avatarURL });
     }
 }
 

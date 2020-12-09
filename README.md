@@ -16,9 +16,6 @@ With yarn:
 yarn add vacefron
 ```
 
-## Documentation
-Check [docs.md](docs.md).
-
 ## Example usages
 ### Basic
 ```js
@@ -51,6 +48,7 @@ client.login('token');
 
 ## Other wrappers
 * [C#](https://github.com/VACEfron/VACEfron.NET)
+* [Java](https://github.com/thunderstorm010/VACEfron4J)  
 * [Python](https://github.com/Soheab/vacefron.py/)
 
 ## Support
