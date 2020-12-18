@@ -19,7 +19,8 @@ yarn add vacefron
 ## Example usages
 ### Basic
 ```js
-const vacefron = require('vacefron');
+const { VACEFronJS } = require('vacefron');
+const vacefron = new VACEFronJS();
 
 (async () => {
     const buffer = await vacefron.water('text');
@@ -32,7 +33,8 @@ const vacefron = require('vacefron');
 const { Client, MessageAttachment } = require('discord.js');
 const client = new Client();
 
-const vacefron = require('vacefron');
+const { VACEFronJS } = require('vacefron');
+const vacefron = new VACEFronJS();
 
 client.on('message', async message => {
     if (message.content === '!iamspeed') {

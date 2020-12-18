@@ -4,8 +4,7 @@
     "moduleResolution": "node",
     "target": "esnext",
     "lib": [
-      "esnext",
-      "dom"
+      "esnext"
     ],
     "declaration": true,
     "removeComments": false,
