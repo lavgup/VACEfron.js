@@ -23,14 +23,14 @@ export class VACEFronJS {
      * @param parameters - Parameters for the request.
      * @protected
      */
-    protected async api(endpoint: string, parameters: object): Promise<Buffer> {
+    protected async api(endpoint: string, parameters: Record<string, string | number | boolean>): Promise<Buffer> {
         for (const [key, value] of Object.entries(parameters)) {
             if (value === undefined) {
                 throw new Error(`Param "${key}" of VACEfron endpoint "${endpoint}" is undefined.`);
             }
         }
 
-        const params = new URLSearchParams((parameters as URLSearchParams));
+        const params = new URLSearchParams(parameters as unknown as URLSearchParams);
         const response = await fetch(`${this.baseURL}/${endpoint}?${params}`);
 
         if (response.status !== 200) {
@@ -155,7 +155,7 @@ export class VACEFronJS {
      * @param text2 - The second text parameter.
      */
     public npc(text1: string, text2: string): Promise<Buffer> {
-        return this.api('npc', { text1, text2 })
+        return this.api('npc', { text1, text2 });
     }
 
     /**
