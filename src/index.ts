@@ -30,8 +30,7 @@ export class VACEFronJS {
             }
         }
 
-        // @ts-ignore
-        const params = new URLSearchParams(parameters);
+        const params = new URLSearchParams((parameters as URLSearchParams));
         const response = await fetch(`${this.baseURL}/${endpoint}?${params}`);
 
         if (response.status !== 200) {
@@ -148,6 +147,15 @@ export class VACEFronJS {
      */
     public heaven(avatarURL: string): Promise<Buffer> {
         return this.api('heaven', { user: avatarURL });
+    }
+
+    /**
+     * Makes a request for the NPC meme.
+     * @param text1 - The first text parameter.
+     * @param text2 - The second text parameter.
+     */
+    public npc(text1: string, text2: string): Promise<Buffer> {
+        return this.api('npc', { text1, text2 })
     }
 
     /**
