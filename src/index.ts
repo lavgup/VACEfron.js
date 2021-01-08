@@ -62,7 +62,7 @@ export class VACEFronJS {
      * @param text - The text for the meme.
      */
     public carReverse(text: string): Promise<Buffer> {
-        return this.api('carreverse', { text: text });
+        return this.api('carreverse', { text });
     }
 
     /**
@@ -91,7 +91,7 @@ export class VACEFronJS {
         }
 
         return this.api('ejected', {
-            name: name,
+            name,
             imposter: wasImposter,
             crewmate: color.toLowerCase()
         });
@@ -102,7 +102,7 @@ export class VACEFronJS {
      * @param text - The text for the meme.
      */
     public emergencyMeeting(text: string): Promise<Buffer> {
-        return this.api('emergencymeeting', { text: text });
+        return this.api('emergencymeeting', { text });
     }
 
     /**
@@ -187,8 +187,8 @@ export class VACEFronJS {
             username: encodeURIComponent(username),
             avatar: avatarURL,
             custombg: customBackgroundURL,
-            level: level,
-            rank: rank,
+            level,
+            rank,
             currentxp: currentXP,
             nextlevelxp: nextLevelXP,
             previouslevelxp: previousLevelXP,
@@ -219,7 +219,7 @@ export class VACEFronJS {
      * @param text - The text for the meme.
      */
     public water(text: string): Promise<Buffer> {
-        return this.api('water', { text: text });
+        return this.api('water', { text });
     }
 
     /**
@@ -236,5 +236,22 @@ export class VACEFronJS {
      */
     public wolverine(avatarURL: string): Promise<Buffer> {
         return this.api('wolverine', { user: avatarURL });
+    }
+
+    /**
+     * Makes a request for the woman yelling at cat meme.
+     * @param woman - The avatar URL of the user, for the woman.
+     * @param cat - The avatar URL of the user, for the cat.
+     */
+    public womanYellingAtCat(woman: string, cat: string): Promise<Buffer> {
+        return this.api('womanyellingatcat', { woman, cat });
+    }
+
+    /**
+     * Makes a request for the dock of shame meme.
+     * @param avatarURL - The avatar URL of the user.
+     */
+    public dockOfShame(avatarURL: string): Promise<Buffer> {
+        return this.api('dockofshame', { user: avatarURL });
     }
 }
