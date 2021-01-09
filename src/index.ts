@@ -80,6 +80,14 @@ export class VACEFronJS {
     }
 
     /**
+     * Makes a request for a drip image.
+     * @param avatarURL - The avatar URL of the user.
+     */
+    public drip(avatarURL: string): Promise<Buffer> {
+        return this.api('drip', { user: avatarURL });
+    }
+
+    /**
      * Makes a request for the Among Us Ejected meme.
      * @param name - The name of the user being ejected.
      * @param wasImposter - Whether this user is the imposter.
