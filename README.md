@@ -28,6 +28,17 @@ const vacefron = new VACEFronJS();
 })();
 ```
 
+### Endpoints with more than one parameter
+```js
+const { VACEFronJS } = require('vacefron');
+const vacefron = new VACEFronJS();
+
+(async () => {
+    const buffer = await vacefron.npc('text1', 'text2);
+    console.log(buffer);
+})();
+```
+
 ### Discord
 ```js
 const { Client, MessageAttachment } = require('discord.js');
