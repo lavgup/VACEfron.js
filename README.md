@@ -34,7 +34,7 @@ const { VACEFronJS } = require('vacefron');
 const vacefron = new VACEFronJS();
 
 (async () => {
-    const buffer = await vacefron.npc('text1', 'text2);
+    const buffer = await vacefron.npc('text1', 'text2');
     console.log(buffer);
 })();
 ```
